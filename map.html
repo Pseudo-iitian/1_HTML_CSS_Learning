@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map-area-shape</title>
+</head>
+<body>
+
+    <!-- use of map -->
+    <img src="timer.png" alt="timer" width="200" height="200" usemap="#workmap">
+    <img src="review.png" alt="score card" width="200" height="200" usemap="#workstar">
+    <map name="workmap">
+        <area shape="circle" coords="100,106,80" href="https://www.google.com/search?client=firefox-b-d&q=watch" target="_blank" alt="watch" onclick="myFunction()">
+    </map>
+    <!-- calling my funciton -->
+    <script>
+        function myFunction() {
+          alert("You clicked the coffee cup!");
+        }
+    </script>
+    <!-- use of map -->
+    <map name="workstar">
+        <area shape="poly" coords="3,76,30,66,44,45,62,67,79,70,98,46,112,71,138,66,153,42,170,72,199,72,180,95,185,125,132,155,68,155,43,116" href="https://www.google.com/search?client=firefox-b-d&q=star" alt="star" target="_blank">
+    </map>
+</body>
+</html>
